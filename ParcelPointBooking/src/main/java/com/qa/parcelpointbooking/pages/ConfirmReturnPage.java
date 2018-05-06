@@ -1,5 +1,15 @@
 package com.qa.parcelpointbooking.pages;
 
+/**
+ * ConfirmReturnPage is an Object for Confirm Return Page and define all 
+ * Web-elements and respective actions.
+ *  
+ * 
+ * @author Koyal
+ * 
+ *
+ */
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

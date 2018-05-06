@@ -1,5 +1,16 @@
 package com.qa.parcelpointbooking.testcases;
 
+/**
+ * ParcelPointAddParcelTest defines and validate all test cases require to 
+ * book a parcel.   
+ * 
+ *  
+ * 
+ * @author Koyal
+ * 
+ *
+ */
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -110,7 +121,7 @@ public class ParcelPointAddParcelTest extends TestBase {
 	public void verifyOrderID() {
 		//System.out.println("16. Inside Function : verifyOrderID");
 		String orderID = _confirmReturn.getOrderId();
-		boolean orderCompleteCond = orderID.toUpperCase().contains(UtilTest.PARCEL_RETURN_ORDER_NUM);
+		boolean orderCompleteCond = orderID.toUpperCase().contains(UIMessages.PARCEL_RETURN_ORDER_NUM);
 		Assert.assertTrue(orderCompleteCond);
 		//System.out.println("Completed Function : verifyOrderID");
 	}
@@ -119,7 +130,7 @@ public class ParcelPointAddParcelTest extends TestBase {
 	@Test(priority = 17)
 	public void verifyReturnReason() {
 		//System.out.println("17. Inside Function : verifyReturnReason");
-		Assert.assertEquals(_confirmReturn.getReturnReason(), UtilTest.PARCEL_RETURN_REASON);
+		Assert.assertEquals(_confirmReturn.getReturnReason(), UIMessages.PARCEL_RETURN_REASON);
 		//System.out.println("Completed Function : verifyReturnReason");
 	}
 
@@ -127,7 +138,7 @@ public class ParcelPointAddParcelTest extends TestBase {
 	@Test(priority = 18)
 	public void verifyAdditionalDetails() {
 		//System.out.println("18. Inside Function : verifyAdditionalDetails");
-		Assert.assertEquals(_confirmReturn.getAdditionalDetails(), UtilTest.PARCEL_RETURN_ADDITIONAL_DETAILS);
+		Assert.assertEquals(_confirmReturn.getAdditionalDetails(), UIMessages.PARCEL_RETURN_ADDITIONAL_DETAILS);
 		//System.out.println("Completed Function : verifyAdditionalDetails");
 	}
 

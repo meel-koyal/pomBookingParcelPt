@@ -1,5 +1,14 @@
 package com.qa.parcelpointbooking.util;
 
+/**
+ * UIMessages is an Interface  that defines all possible error messages  
+ * while navigating during parcel booking and all static information that need to be verified
+ * 
+ * @author Koyal
+ * 
+ *
+ */
+
 public interface UIMessages {
 	//List all the UI error messages
 	public static String HOME_PAGE_URL = "https://staging.parcelpoint.com.au/adidas/return/method";
@@ -17,4 +26,7 @@ public interface UIMessages {
 	public static String EMPTY_PHONE_NUM = "Please specify your phone number";
 	public static String CHECK_EXISTING_EMAIL = "This email is already in use. Please login above."; 
 	public static String CHECK_PHONE_NUM_FORMAT = "Invalid phone number";
+	public static String PARCEL_RETURN_REASON = "Returns Reason: Faulty (12)";
+	public static String PARCEL_RETURN_ADDITIONAL_DETAILS = "Additional Details: None";
+	public static String PARCEL_RETURN_ORDER_NUM = "AAU0123467";
 }

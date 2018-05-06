@@ -1,5 +1,16 @@
 package com.qa.parcelpointbooking.testcases;
 
+/**
+ * UIErrorMessageTest defines and validates all test cases for errors while
+ * booking a parcel.     
+ * 
+ *  
+ * 
+ * @author Koyal
+ * 
+ *
+ */
+
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;

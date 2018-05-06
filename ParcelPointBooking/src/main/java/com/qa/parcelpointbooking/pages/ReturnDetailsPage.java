@@ -1,5 +1,15 @@
 package com.qa.parcelpointbooking.pages;
 
+/**
+ * ReturnDetailsPage is an Object for Return Details Page and define all 
+ * Web-elements and respective actions.
+ *  
+ * 
+ * @author Koyal
+ * 
+ *
+ */
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
