@@ -36,12 +36,15 @@ public class TestBase {
 
 	public void launchBrowser() {
 
+		String initDriverPath = System.getProperty("user.dir")+File.separator+"WebDrivers"+File.separator;
+		
 		String browserName = prop.getProperty("browser");
+		
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\vikas\\Desktop\\BrowserDriver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", initDriverPath+"chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\vikas\\Desktop\\BrowserDriver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", initDriverPath+"geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 
