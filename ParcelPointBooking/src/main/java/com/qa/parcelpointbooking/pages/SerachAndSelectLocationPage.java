@@ -197,7 +197,7 @@ public class SerachAndSelectLocationPage extends TestBase {
 	public void checkClickOnNextButtonForNavigatingToDetailsPageWithErrors(boolean afterStoreSelection) {
 		if (afterStoreSelection) {
 			wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(locationWidget));
-			System.out.println("Inside checkClickOnNextButtonWithErrors : " + selectedStoreName.getText());
+			
 			wait.until(ExpectedConditions.textToBePresentInElement(selectedStoreName, getStoreNamePostSelection()));
 			driver.switchTo().defaultContent();
 		}
